@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="Portfolio" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="tema-oscuro">
+    <div class="contenedor-header">
+      <header>
+        <div class="logo">
+          <a href="#">David</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+            <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+            <li>
+              <a href="#curriculum" onclick="seleccionar()">CURRICULUM</a>
+            </li>
+            <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+            <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+            <li>
+              <button
+                id="cambiar-tema"
+                class="fa-regular fa-xl fa-moon"
+              ></button>
+            </li>
+          </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
+
+    <section id="inicio" class="inicio">
+      <div class="contenido-banner">
+        <div class="contenedor-img">
+          <img src="resources/img/Portfolio/DavidGomez.jpg" alt="David Gómez" />
+        </div>
+        <h1>David Gómez</h1>
+        <h2>TÉCNICO SUPERIOR EN DESARROLLO DE APLICACIONES MULTIPLATAFORMA</h2>
+        <div class="redes">
+          <a
+            href="https://www.linkedin.com/in/david-alejandro-gomez-toca"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/DavidGomezToca" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobremi" class="sobremi">
+      <div class="contenido-seccion">
+        <h2>Sobre Mí</h2>
+        <p>
+          <span>Presentación: </span><br />
+          Soy un técnico en desarrollo de aplicaciones multiplataforma con
+          habilidades destacadas en Java. Mi enfoque en la excelencia y el
+          conocimiento actualizado en desarrollo multiplataforma me permite
+          aportar eficazmente en equipos multidisciplinarios. Busco aplicar mi
+          experiencia para impulsar el éxito en proyectos de desarrollo.
+        </p>
+        <div class="fila">
+          <div class="col">
+            <h3>Datos Personales</h3>
+            <ul>
+              <li><strong>Edad</strong> 20</li>
+              <li><strong>Móvil</strong> +34 633 11 85 77</li>
+              <li><strong>Email</strong> david.gomez.devops@gmail.com</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3>Intereses</h3>
+            <div class="contenedor-intereses">
+              <div class="interes">
+                <i class="fa-solid fa-gamepad"></i>
+                <span>JUEGOS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-code"></i>
+                <span>DESARROLLO</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-chess"></i>
+                <span>AJEDREZ</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-basketball"></i>
+                <span>BALONCESTO</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-headphones"></i>
+                <span>MUSICA</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-palette"></i>
+                <span>ARTE</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-plane"></i>
+                <span>VIAJAR</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button>
+          <a
+            class="boton-descargar"
+            download="CV David Gomez"
+            href="resources/CV David Gomez.pdf"
+          >
+            Descargar CV <i class="fa-solid fa-download"></i>
+          </a>
+          <span class="overlay"></span>
+        </button>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <div class="contenido-seccion">
+        <h2>Skills</h2>
+        <div class="fila">
+          <div class="col">
+            <h3>Technical Skills</h3>
+            <div class="skill">
+              <span>HTML & CSS</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Javascript</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Java</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>C#</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>MySQL</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Android Studio</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Unity</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>GIT</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <h3>Profesional Skills</h3>
+            <div class="skill">
+              <span>Comunicación</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Trabajo en equipo</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Creatividad</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Dedicación</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="curriculum" class="curriculum">
+      <div class="contenido-seccion">
+        <h2>Curriculum</h2>
+        <div class="fila">
+          <div class="col izquierda">
+            <h3>Educación y formación</h3>
+            <div class="item izq">
+              <h4>FP Grado superior</h4>
+              <h4>Desarrollo de Aplicaciones Multiplataforma</h4>
+              <span class="casa">Edix</span>
+              <span class="fecha">2021 - 2023</span>
+              <p></p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>FP Grado medio</h4>
+              <h4>Sistemas Microinformáticos y Redes</h4>
+              <span class="casa">Centro Afuera</span>
+              <span class="fecha">2019 - 2021</span>
+              <p></p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col derecha">
+            <h3>Experiencia laboral</h3>
+            <div class="item der">
+              <h4>Prácticas Grado superior</h4>
+              <span class="casa">Sopra Steria</span>
+              <span class="fecha">03/2023 - 06/2023</span>
+              <p>Mantenimiento y desarrollo full stack.</p>
+              <p class="used">
+                Uso de HTML 5, CSS, React, Java, MySQL, DBeaver y Git.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>Prácticas Grado medio</h4>
+              <span class="casa">Recovery PC</span>
+              <span class="fecha">04/2021 - 06/2021</span>
+              <p>
+                Mantenimiento de frontend y mejora de posicionamiento SEO de
+                sitios existentes.
+              </p>
+              <p class="used">
+                Uso de WordPress, HTML 5, CSS, JavaScript y herramientas
+                analíticas.
+              </p>
+
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+      <div class="contenido-seccion">
+        <h2>Portfolio</h2>
+        <div class="galeria">
+          <div class="proyecto">
+            <a
+              href="https://github.com/DavidGomezToca/Portfolio"
+              target="_blank"
+              ><img
+                src="resources/img/Proyectos/Proyecto Portfolio.png"
+                alt="Proyecto portfolio"
+              />
+              <div class="overlay">
+                <h3>Portfolio</h3>
+                <p>HTML, CSS & JS</p>
+              </div>
+            </a>
+          </div>
+          <div class="proyecto">
+            <a
+              href="https://github.com/DavidGomezToca/TestAlgoritmia_09_03_23"
+              target="_blank"
+              ><img
+                src="resources/img/Proyectos/Proyecto Test Algoritmia.png"
+                alt="Proyecto test algoritmia"
+              />
+              <div class="overlay">
+                <h3>Test Algoritmia</h3>
+                <p>Java</p>
+              </div>
+            </a>
+          </div>
+          <div class="proyecto">
+            <a
+              href="https://github.com/DavidGomezToca/AE-3-Pruebas-del-software-con-JUnit"
+              target="_blank"
+              ><img
+                src="resources/img/Proyectos/Proyecto JUnit.png"
+                alt="Proyecto pruebas JUnit"
+              />
+              <div class="overlay">
+                <h3>Pruebas JUnit</h3>
+                <p>Java</p>
+              </div>
+            </a>
+          </div>
+          <div class="proyecto">
+            <a
+              href="https://github.com/DavidGomezToca/AE-2.-Manejo-de-conectores-de-BBDD"
+              target="_blank"
+              ><img
+                src="resources/img/Proyectos/Proyecto Conectores BBDD.png"
+                alt="Proyecto conectores BBDD"
+              />
+              <div class="overlay">
+                <h3>Conectores BBDD</h3>
+                <p>Java</p>
+              </div>
+            </a>
+          </div>
+          <div class="proyecto">
+            <a
+              href="https://github.com/DavidGomezToca/AE2-Control-de-versiones-con-Git-GitHub-y-un-IDE"
+              target="_blank"
+              ><img
+                src="resources/img/Proyectos/Proyecto Git.png"
+                alt="Proyecto control de versiones"
+              />
+              <div class="overlay">
+                <h3>Control de versiones</h3>
+                <p>Git</p>
+              </div>
+            </a>
+          </div>
+          <div class="proyecto">
+            <a
+              href="https://github.com/DavidGomezToca/AE-1_Manejo_De_Ficheros"
+              target="_blank"
+              ><img
+                src="resources/img/Proyectos/Proyecto Manejo de ficheros.png"
+                alt="Proyecto Manejo de ficheros"
+              />
+              <div class="overlay">
+                <h3>Manejo de ficheros</h3>
+                <p>Java</p>
+              </div>
+            </a>
+          </div>
+          <div class="proyecto">
+            <a
+              href="https://github.com/DavidGomezToca/AE-1.-Carrito-de-la-compra"
+              target="_blank"
+              ><img
+                src="resources/img/Proyectos/Proyecto Carrito de la Compra.png"
+                alt="Proyecto carrito compra"
+              />
+              <div class="overlay">
+                <h3>Carrito compra</h3>
+                <p>HTML, CSS & JS</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="contacto">
+      <div class="contenido-seccion">
+        <h2>Contacto</h2>
+        <div class="fila">
+          <div class="col">
+            <div class="info">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  España, Madrid
+                </li>
+                <li>
+                  <i class="fa-solid fa-mobile-screen"></i>
+                  +34 633 11 85 77
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  david.gomez.devops@gmail.com
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col">
+            <form action="https://formspree.io/f/mknlrgbd" method="POST">
+              <input type="text" name="Nombre" placeholder="Nombre" required />
+              <input
+                type="text"
+                name="Número de teléfono"
+                placeholder="Número de teléfono"
+              />
+              <input type="email" name="Email" placeholder="Email" required />
+              <input type="text" name="Asunto" placeholder="Asunto" required />
+              <textarea
+                name="Mensaje"
+                cols="30"
+                rows="10"
+                placeholder="Mensaje"
+                required
+              ></textarea>
+              <button>
+                Enviar Mensaje
+                <i class="fa-solid fa-paper-plane"></i>
+                <span class="overlay"></span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+      <div class="redes">
+        <a
+          href="https://www.linkedin.com/in/david-alejandro-gomez-toca"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/DavidGomezToca" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
