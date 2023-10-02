@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="Portfolio" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -10,10 +11,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
   </head>
-  <body class="tema-oscuro">
+  <body>
     <div class="contenedor-header">
       <header>
         <div class="logo">
@@ -27,12 +28,18 @@
             <li>
               <a href="#curriculum" onclick="seleccionar()">CURRICULUM</a>
             </li>
+            <li>
+              <a href="#formacion-profesional" onclick="seleccionar()"
+                >FORMACION</a
+              >
+            </li>
             <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
             <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
             <li>
               <button
                 id="cambiar-tema"
                 class="fa-regular fa-xl fa-moon"
+                onclick="seleccionar()"
               ></button>
             </li>
           </ul>
@@ -303,6 +310,28 @@
       </div>
     </section>
 
+    <section id="formacion-profesional" class="formacion-profesional">
+      <div class="contenido-seccion">
+        <h2>Formacion Profesional</h2>
+        <div class="galeria">
+          <div class="certificado">
+            <a
+              href="https://www.udemy.com/certificate/UC-c1c39800-2bb9-4050-9ffc-2effb74bdad7"
+              target="_blank"
+              ><img
+                src="resources/img/Certificados/SQL - MySQL for Data Analytics and Business Intelligence - UC-c1c39800-2bb9-4050-9ffc-2effb74bdad7.jpg"
+                alt="Certificado - SQL - MySQL for Data Analytics and Business Intelligence"
+              />
+              <div class="overlay">
+                <h3>SQL - Data Analytics</h3>
+                <p>Udemy</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="portfolio" class="portfolio">
       <div class="contenido-seccion">
         <h2>Portfolio</h2>
@@ -474,6 +503,5 @@
         ></a>
       </div>
     </footer>
-    <script src="script.js"></script>
   </body>
 </html>

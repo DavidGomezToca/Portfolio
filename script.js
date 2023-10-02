@@ -4,31 +4,34 @@ document.addEventListener('DOMContentLoaded', function () {
     const cambiarTemaButton = document.getElementById('cambiar-tema');
     const body = document.body;
 
-    // Verificar si se almacenó un tema preferido
-    const temaPreferido = localStorage.getItem('tema-preferido');
+    let temaPreferido = localStorage.getItem('tema-preferido');
 
-    if (temaPreferido) {
-        body.classList.add(temaPreferido);
+    if (!temaPreferido) {
+        temaPreferido = 'tema-oscuro';
+        localStorage.setItem('tema-preferido', temaPreferido);
     }
+
+    body.classList.add(temaPreferido);
+    toggleIcon(cambiarTemaButton);
 
     cambiarTemaButton.addEventListener('click', function () {
         body.classList.toggle('tema-claro');
         body.classList.toggle('tema-oscuro');
         toggleIcon(cambiarTemaButton);
-
-        // // Almacenar el tema preferido en localStorage
-        // const temaActual = body.classList.contains('tema-claro') ? 'tema-claro' : 'tema-oscuro';
-        // localStorage.setItem('tema-preferido', temaActual);
+        let temaActual = body.classList.contains('tema-claro') ? 'tema-claro' : 'tema-oscuro';
+        localStorage.setItem('tema-preferido', temaActual);
     });
 });
 
 function toggleIcon(button) {
-    if (button.classList.contains('fa-moon')) {
-        button.classList.remove('fa-moon');
-        button.classList.add('fa-sun');
-    } else {
+    const body = document.body;
+    if (body.classList.contains('tema-oscuro')) {
         button.classList.remove('fa-sun');
         button.classList.add('fa-moon');
+    }
+    else if (body.classList.contains('tema-claro')) {
+        button.classList.remove('fa-moon');
+        button.classList.add('fa-sun');
     }
 }
 
@@ -45,6 +48,10 @@ function mostrarOcultarMenu() {
 function seleccionar() {
     document.getElementById("nav").classList = "";
     menuVisible = false;
+}
+
+window.onscroll = function () {
+    efectoHabilidades();
 }
 
 function efectoHabilidades() {
@@ -65,8 +72,4 @@ function efectoHabilidades() {
         habilidades[10].classList.add("creatividad")
         habilidades[11].classList.add("dedicacion")
     }
-}
-
-window.onscroll = function () {
-    efectoHabilidades();
 }
