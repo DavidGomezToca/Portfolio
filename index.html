@@ -12,40 +12,123 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="styles.css" />
-    <script src="script.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/translate/translate-espanol.js"></script>
+    <script src="scripts/translate/translate-frances.js"></script>
+    <script src="scripts/translate/translate-ingles.js"></script>
+    <script src="scripts/translate/translate-portugues.js"></script>
   </head>
   <body>
     <div class="contenedor-header">
       <header>
         <div class="logo">
-          <a href="#">David</a>
+          <a href="#inicio">David</a>
         </div>
         <nav id="nav">
           <ul>
-            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
-            <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
-            <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
             <li>
-              <a href="#curriculum" onclick="seleccionar()">CURRICULUM</a>
+              <a
+                class="t_inicio"
+                href="#inicio"
+                onclick="seleccionarOpcion()"
+              ></a>
             </li>
             <li>
-              <a href="#formacion-profesional" onclick="seleccionar()"
-                >FORMACION</a
-              >
+              <a
+                class="t_sobreMi"
+                href="#sobremi"
+                onclick="seleccionarOpcion()"
+              ></a>
             </li>
-            <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
-            <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+            <li>
+              <a
+                class="t_skills"
+                href="#skills"
+                onclick="seleccionarOpcion()"
+              ></a>
+            </li>
+            <li>
+              <a
+                class="t_curriculum"
+                href="#curriculum"
+                onclick="seleccionarOpcion()"
+              ></a>
+            </li>
+            <li>
+              <a
+                class="t_formacion"
+                href="#formacion-profesional"
+                onclick="seleccionarOpcion()"
+              ></a>
+            </li>
+            <li>
+              <a
+                class="t_portfolio"
+                href="#portfolio"
+                onclick="seleccionarOpcion()"
+              ></a>
+            </li>
+            <li>
+              <a
+                class="t_contacto"
+                href="#contacto"
+                onclick="seleccionarOpcion()"
+              ></a>
+            </li>
             <li>
               <button
                 id="cambiar-tema"
                 class="fa-regular fa-xl fa-moon"
-                onclick="seleccionar()"
+                onclick="seleccionarOpcion()"
               ></button>
             </li>
           </ul>
         </nav>
-        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+        <div class="nav-responsive" onclick="mostrarOcultarMenuOpciones()">
           <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="cambiar-idioma" onclick="mostrarOcultarMenuIdiomas()">
+          <img id="bandera-idioma" alt="Idioma actual" />
+        </div>
+        <div id="menu-idiomas">
+          <ul>
+            <li>
+              <div class="idioma" id="espanol">
+                ES
+                <img
+                  src="resources/img/Portfolio/Idiomas/Español.jpg"
+                  alt="Español"
+                />
+              </div>
+            </li>
+            <li>
+              <div class="idioma" id="frances">
+                FR
+                <img
+                  src="resources/img/Portfolio/Idiomas/Frances.png"
+                  alt="Français"
+                />
+              </div>
+            </li>
+            <li>
+              <div class="idioma" id="ingles">
+                EN
+                <img
+                  src="resources/img/Portfolio/Idiomas/Ingles.png"
+                  alt="English"
+                />
+              </div>
+            </li>
+            <li>
+              <div class="idioma" id="portugues">
+                PT
+                <img
+                  src="resources/img/Portfolio/Idiomas/Portugues.png"
+                  alt="Português"
+                />
+              </div>
+            </li>
+          </ul>
         </div>
       </header>
     </div>
@@ -56,7 +139,7 @@
           <img src="resources/img/Portfolio/DavidGomez.jpg" alt="David Gómez" />
         </div>
         <h1>David Gómez</h1>
-        <h2>TÉCNICO SUPERIOR EN DESARROLLO DE APLICACIONES MULTIPLATAFORMA</h2>
+        <h2 id="t-01"></h2>
         <div class="redes">
           <a
             href="https://www.linkedin.com/in/david-alejandro-gomez-toca"
@@ -72,66 +155,61 @@
 
     <section id="sobremi" class="sobremi">
       <div class="contenido-seccion">
-        <h2>Sobre Mí</h2>
-        <p>
-          <span>Presentación: </span><br />
-          Soy un técnico en desarrollo de aplicaciones multiplataforma con
-          habilidades destacadas en Java. Mi enfoque en la excelencia y el
-          conocimiento actualizado en desarrollo multiplataforma me permite
-          aportar eficazmente en equipos multidisciplinarios. Busco aplicar mi
-          experiencia para impulsar el éxito en proyectos de desarrollo.
-        </p>
+        <h2 class="t_sobreMi"></h2>
+        <span id="t-02" class="presentacion"></span><br />
+        <p id="t-03"></p>
         <div class="fila">
           <div class="col">
-            <h3>Datos Personales</h3>
+            <h3 id="t-04"></h3>
             <ul>
-              <li><strong>Edad</strong> 20</li>
-              <li><strong>Móvil</strong> +34 633 11 85 77</li>
-              <li><strong>Email</strong> david.gomez.devops@gmail.com</li>
+              <li><strong id="t-05"></strong> 20</li>
+              <li><strong id="t-06"></strong> +34 633 11 85 77</li>
+              <li><strong id="t-07"></strong> david.gomez.devops@gmail.com</li>
+              <li><strong id="t-08"></strong> ES / FR / EN / PT</li>
             </ul>
           </div>
           <div class="col">
-            <h3>Intereses</h3>
+            <h3 id="t-09"></h3>
             <div class="contenedor-intereses">
               <div class="interes">
                 <i class="fa-solid fa-gamepad"></i>
-                <span>JUEGOS</span>
+                <span id="t-10"></span>
               </div>
               <div class="interes">
                 <i class="fa-solid fa-code"></i>
-                <span>DESARROLLO</span>
+                <span id="t-11"></span>
               </div>
               <div class="interes">
                 <i class="fa-solid fa-chess"></i>
-                <span>AJEDREZ</span>
+                <span id="t-12"></span>
               </div>
               <div class="interes">
                 <i class="fa-solid fa-basketball"></i>
-                <span>BALONCESTO</span>
+                <span id="t-13"></span>
               </div>
               <div class="interes">
                 <i class="fa-solid fa-headphones"></i>
-                <span>MUSICA</span>
+                <span id="t-14"></span>
               </div>
               <div class="interes">
                 <i class="fa-solid fa-palette"></i>
-                <span>ARTE</span>
+                <span id="t-15"></span>
               </div>
               <div class="interes">
                 <i class="fa-solid fa-plane"></i>
-                <span>VIAJAR</span>
+                <span id="t-16"></span>
               </div>
             </div>
           </div>
         </div>
         <button>
           <a
+            id="t-17"
             class="boton-descargar"
             download="CV David Gomez"
             href="resources/CV David Gomez.pdf"
-          >
-            Descargar CV <i class="fa-solid fa-download"></i>
-          </a>
+          ></a>
+          <i class="fa-solid fa-download"></i>
           <span class="overlay"></span>
         </button>
       </div>
@@ -139,7 +217,7 @@
 
     <section id="skills" class="skills">
       <div class="contenido-seccion">
-        <h2>Skills</h2>
+        <h2 class="t_skills"></h2>
         <div class="fila">
           <div class="col">
             <h3>Technical Skills</h3>
@@ -211,7 +289,7 @@
           <div class="col">
             <h3>Profesional Skills</h3>
             <div class="skill">
-              <span>Comunicación</span>
+              <span id="t-18"></span>
               <div class="barra-skill">
                 <div class="progreso">
                   <span></span>
@@ -219,7 +297,7 @@
               </div>
             </div>
             <div class="skill">
-              <span>Trabajo en equipo</span>
+              <span id="t-19"></span>
               <div class="barra-skill">
                 <div class="progreso">
                   <span></span>
@@ -227,7 +305,7 @@
               </div>
             </div>
             <div class="skill">
-              <span>Creatividad</span>
+              <span id="t-20"></span>
               <div class="barra-skill">
                 <div class="progreso">
                   <span></span>
@@ -235,7 +313,7 @@
               </div>
             </div>
             <div class="skill">
-              <span>Dedicación</span>
+              <span id="t-21"></span>
               <div class="barra-skill">
                 <div class="progreso">
                   <span></span>
@@ -249,13 +327,13 @@
 
     <section id="curriculum" class="curriculum">
       <div class="contenido-seccion">
-        <h2>Curriculum</h2>
+        <h2 class="t_curriculum"></h2>
         <div class="fila">
           <div class="col izquierda">
-            <h3>Educación y formación</h3>
+            <h3 id="t-22"></h3>
             <div class="item izq">
-              <h4>FP Grado superior</h4>
-              <h4>Desarrollo de Aplicaciones Multiplataforma</h4>
+              <h4 id="t-23"></h4>
+              <h4 id="t-24"></h4>
               <span class="casa">Edix</span>
               <span class="fecha">2021 - 2023</span>
               <p></p>
@@ -264,8 +342,8 @@
               </div>
             </div>
             <div class="item izq">
-              <h4>FP Grado medio</h4>
-              <h4>Sistemas Microinformáticos y Redes</h4>
+              <h4 id="t-25"></h4>
+              <h4 id="t-26"></h4>
               <span class="casa">Centro Afuera</span>
               <span class="fecha">2019 - 2021</span>
               <p></p>
@@ -275,32 +353,23 @@
             </div>
           </div>
           <div class="col derecha">
-            <h3>Experiencia laboral</h3>
+            <h3 id="t-27"></h3>
             <div class="item der">
-              <h4>Prácticas Grado superior</h4>
+              <h4 id="t-28"></h4>
               <span class="casa">Sopra Steria</span>
               <span class="fecha">03/2023 - 06/2023</span>
-              <p>Mantenimiento y desarrollo full stack.</p>
-              <p class="used">
-                Uso de HTML 5, CSS, React, Java, MySQL, DBeaver y Git.
-              </p>
+              <p id="t-29"></p>
+              <p id="t-30" class="used"></p>
               <div class="conectord">
                 <div class="circulod"></div>
               </div>
             </div>
             <div class="item der">
-              <h4>Prácticas Grado medio</h4>
+              <h4 id="t-31"></h4>
               <span class="casa">Recovery PC</span>
               <span class="fecha">04/2021 - 06/2021</span>
-              <p>
-                Mantenimiento de frontend y mejora de posicionamiento SEO de
-                sitios existentes.
-              </p>
-              <p class="used">
-                Uso de WordPress, HTML 5, CSS, JavaScript y herramientas
-                analíticas.
-              </p>
-
+              <p id="t-32"></p>
+              <p id="t-33" class="used"></p>
               <div class="conectord">
                 <div class="circulod"></div>
               </div>
@@ -312,7 +381,7 @@
 
     <section id="formacion-profesional" class="formacion-profesional">
       <div class="contenido-seccion">
-        <h2>Formacion Profesional</h2>
+        <h2 class="t_formacion"></h2>
         <div class="galeria">
           <div class="certificado">
             <a
@@ -334,7 +403,7 @@
 
     <section id="portfolio" class="portfolio">
       <div class="contenido-seccion">
-        <h2>Portfolio</h2>
+        <h2 class="t_portfolio"></h2>
         <div class="galeria">
           <div class="proyecto">
             <a
@@ -440,14 +509,14 @@
 
     <section id="contacto" class="contacto">
       <div class="contenido-seccion">
-        <h2>Contacto</h2>
+        <h2 class="t_contacto"></h2>
         <div class="fila">
           <div class="col">
             <div class="info">
               <ul>
                 <li>
                   <i class="fa-solid fa-location-dot"></i>
-                  España, Madrid
+                  <span id="t-34">España, Madrid</span>
                 </li>
                 <li>
                   <i class="fa-solid fa-mobile-screen"></i>
@@ -462,23 +531,19 @@
           </div>
           <div class="col">
             <form action="https://formspree.io/f/mknlrgbd" method="POST">
-              <input type="text" name="Nombre" placeholder="Nombre" required />
-              <input
-                type="text"
-                name="Número de teléfono"
-                placeholder="Número de teléfono"
-              />
-              <input type="email" name="Email" placeholder="Email" required />
-              <input type="text" name="Asunto" placeholder="Asunto" required />
+              <input id="t-35" type="text" name="Nombre" required />
+              <input id="t-36" type="text" name="Número de teléfono" />
+              <input id="t-37" type="email" name="Email" required />
+              <input id="t-38" type="text" name="Asunto" required />
               <textarea
+                id="t-39"
                 name="Mensaje"
                 cols="30"
                 rows="10"
-                placeholder="Mensaje"
                 required
               ></textarea>
               <button>
-                Enviar Mensaje
+                <span id="t-40"></span>
                 <i class="fa-solid fa-paper-plane"></i>
                 <span class="overlay"></span>
               </button>

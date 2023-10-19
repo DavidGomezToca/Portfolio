@@ -96,7 +96,7 @@ h2 {
   text-align: none;
   margin: 0 15px;
   padding: 3px;
-  transition: 0.5s;
+  transition: 0.3s;
   text-decoration: none;
   font-weight: bold;
 }
@@ -149,6 +149,88 @@ h2 {
   color: #3a3a3a;
 }
 
+.cambiar-idioma {
+  width: 50px;
+  height: 30px;
+}
+
+.cambiar-idioma img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 10%;
+}
+
+#menu-idiomas {
+  display: none;
+  position: absolute;
+  right: 80px;
+  top: 75px;
+  width: 180px;
+  z-index: -1;
+  text-align: none;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.active {
+  display: block !important;
+}
+
+.tema-oscuro #menu-idiomas {
+  background-color: #252a2e;
+  color: #f4f4f4;
+}
+
+.tema-claro #menu-idiomas {
+  background-color: #f4f4f4;
+  color: #3a3a3a;
+}
+
+#menu-idiomas ul {
+  display: block !important;
+}
+
+#menu-idiomas ul li {
+  border: 1px solid;
+  padding: 10px 0;
+}
+
+#menu-idiomas ul li .idioma {
+  text-align: none;
+  margin: 0 15px;
+  padding: 3px;
+  transition: 0.3s;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.tema-oscuro #menu-idiomas ul li .idioma:hover {
+  color: #1cb698;
+}
+
+.tema-claro #menu-idiomas ul li .idioma:hover {
+  color: #3979e1;
+}
+
+#menu-idiomas ul li .idioma img {
+  width: 50px;
+  height: 30px;
+  display: inline;
+  border-radius: 10%;
+  margin-left: 14%;
+}
+
+.tema-oscuro #menu-idiomas ul li {
+  border-color: #f4f4f4;
+}
+
+.tema-claro #menu-idiomas ul li {
+  border-color: #3a3a3a;
+}
+
 .inicio {
   background-size: cover;
   height: 100vh;
@@ -195,7 +277,7 @@ h2 {
 .inicio .contenido-banner img {
   margin-top: 40px;
   border: 10px solid;
-  display: block;
+  display: inline;
   width: 80%;
   margin: auto;
   border-radius: 100%;
@@ -245,15 +327,15 @@ h2 {
   margin-bottom: 20px;
 }
 
-.sobremi .contenido-seccion p span {
+.sobremi .contenido-seccion .presentacion {
   font-weight: bold;
 }
 
-.tema-oscuro .sobremi .contenido-seccion p span {
+.tema-oscuro .sobremi .contenido-seccion .presentacion {
   color: #1cb698;
 }
 
-.tema-claro .sobremi .contenido-seccion p span {
+.tema-claro .sobremi .contenido-seccion .presentacion {
   color: #3979e1;
 }
 
@@ -361,6 +443,14 @@ h2 {
 }
 
 .tema-claro .sobremi button a {
+  color: #3a3a3a;
+}
+
+.tema-oscuro .sobremi button i {
+  color: #f4f4f4;
+}
+
+.tema-claro .sobremi button i {
   color: #3a3a3a;
 }
 
@@ -1109,7 +1199,9 @@ footer .arriba {
   }
 
   .nav-responsive {
-    display: block;
+    display: inline-flex;
+    position: absolute;
+    right: 100px;
   }
 
   .responsive {
@@ -1125,7 +1217,7 @@ footer .arriba {
   }
 
   .tema-claro .responsive {
-    background-color: #eae1e1;
+    background-color: #f4f4f4;
   }
 
   .responsive ul {
@@ -1143,6 +1235,10 @@ footer .arriba {
 
   .tema-claro .responsive ul li {
     border-color: #3a3a3a;
+  }
+
+  #menu-idiomas {
+    right: 0;
   }
 }
 
