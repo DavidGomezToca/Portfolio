@@ -69,13 +69,14 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px;
+  padding: 15px 0px;
 }
 
 .contenedor-header header .logo a {
   font-family: "Righteous";
-  font-size: 36px;
+  font-size: 23px;
   text-decoration: none;
+  vertical-align: middle;
 }
 
 .tema-oscuro .contenedor-header header .logo a {
@@ -325,6 +326,7 @@ h2 {
   font: 18px;
   line-height: 22px;
   margin-bottom: 20px;
+  text-align: justify;
 }
 
 .sobremi .contenido-seccion .presentacion {

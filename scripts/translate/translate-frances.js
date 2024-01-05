@@ -22,7 +22,7 @@ function translate_frances() {
 
     let t_formacion = document.getElementsByClassName("t_formacion");
     for (let item of t_formacion) {
-        item.innerHTML = "FORMATION";
+        item.innerHTML = "DIPLÔMES";
     }
 
     let t_portfolio = document.getElementsByClassName("t_portfolio");
@@ -43,7 +43,7 @@ function translate_frances() {
     t_02.innerHTML = "Presentation :";
 
     let t_03 = document.getElementById("t-03");
-    t_03.innerHTML = "Je suis un technicien en développement d'applications multiplateformes avec des compétences remarquables en Java. Mon accent sur l'excellence et les connaissances mises à jour en développement multiplateforme me permet d'apporter efficacement dans des équipes multidisciplinaires. Je cherche à appliquer mon expérience pour stimuler le succès des projets de développement.";
+    t_03.innerHTML = "Je suis Technicien en Développement d'Applications Multiplateformes avec des compétences remarquables en Java. Mon accent sur l'excellence et les connaissances mises à jour en développement multiplateforme me permet d'apporter efficacement dans des équipes multidisciplinaires. Je cherche à appliquer mon expérience pour stimuler le succès des projets de développement.";
 
     let t_04 = document.getElementById("t-04");
     t_04.innerHTML = "Données Personnelles";
@@ -155,4 +155,10 @@ function translate_frances() {
 
     let t_40 = document.getElementById("t-40");
     t_40.innerHTML = "Envoyer message";
+
+    let t_41 = document.getElementById("t-41");
+    t_41.innerHTML = "Edix Éducation";
+
+    let t_42 = document.getElementById("t-42");
+    t_42.innerHTML = "Centre d'Études Supérieures Afuera";
 };

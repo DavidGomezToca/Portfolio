@@ -22,7 +22,7 @@ function translate_ingles() {
 
     let t_formacion = document.getElementsByClassName("t_formacion");
     for (let item of t_formacion) {
-        item.innerHTML = "FORMATION";
+        item.innerHTML = "DEGREES";
     }
 
     let t_portfolio = document.getElementsByClassName("t_portfolio");
@@ -43,7 +43,7 @@ function translate_ingles() {
     t_02.innerHTML = "Presentation :";
 
     let t_03 = document.getElementById("t-03");
-    t_03.innerHTML = "I'm a technician in multiplatform application development with strong skills in Java. My focus on excellence and up-to-date knowledge in multiplatform development enables me to effectively contribute to multidisciplinary teams. I seek to apply my expertise to drive success in development projects.";
+    t_03.innerHTML = "I'm Technician in Multiplatform Application Development with strong skills in Java. My focus on excellence and up-to-date knowledge in multiplatform development enables me to effectively contribute to multidisciplinary teams. I seek to apply my expertise to drive success in development projects.";
 
     let t_04 = document.getElementById("t-04");
     t_04.innerHTML = "Personal Information";
@@ -155,4 +155,10 @@ function translate_ingles() {
 
     let t_40 = document.getElementById("t-40");
     t_40.innerHTML = "Send message";
+
+    let t_41 = document.getElementById("t-41");
+    t_41.innerHTML = "Edix Education";
+
+    let t_42 = document.getElementById("t-42");
+    t_42.innerHTML = "Higher Education Center Afuera";
 };

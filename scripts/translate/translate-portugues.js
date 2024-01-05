@@ -22,7 +22,7 @@ function translate_portugues() {
 
     let t_formacion = document.getElementsByClassName("t_formacion");
     for (let item of t_formacion) {
-        item.innerHTML = "FORMAÇÃO";
+        item.innerHTML = "DIPLOMAS";
     }
 
     let t_portfolio = document.getElementsByClassName("t_portfolio");
@@ -43,7 +43,7 @@ function translate_portugues() {
     t_02.innerHTML = "Apresentação :";
 
     let t_03 = document.getElementById("t-03");
-    t_03.innerHTML = "Sou um técnico em desenvolvimento de aplicações multiplataforma com habilidades de destaque em Java. O meu enfoque na excelência e no conhecimento atualizado em desenvolvimento multiplataforma me permite contribuir eficazmente em equipes multidisciplinares. Procuro aplicar minha experiência para impulsionar o sucesso em projetos de desenvolvimento.";
+    t_03.innerHTML = "Sou Técnico em Desenvolvimento de Aplicações Multiplataforma com habilidades de destaque em Java. O meu enfoque na excelência e no conhecimento atualizado em desenvolvimento multiplataforma me permite contribuir eficazmente em equipes multidisciplinares. Procuro aplicar minha experiência para impulsionar o sucesso em projetos de desenvolvimento.";
 
     let t_04 = document.getElementById("t-04");
     t_04.innerHTML = "Dados pessoais";
@@ -155,4 +155,10 @@ function translate_portugues() {
 
     let t_40 = document.getElementById("t-40");
     t_40.innerHTML = "Enviar Mensagem";
+
+    let t_41 = document.getElementById("t-41");
+    t_41.innerHTML = "Edix Educação";
+
+    let t_42 = document.getElementById("t-42");
+    t_42.innerHTML = "Centro de Estudos Avançados Afuera";
 };
